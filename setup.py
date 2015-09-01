@@ -83,7 +83,7 @@ setup(
     # $ pip install -e .[dev,test]
     extras_require={
         'dev': ['check-manifest'],
-        'test': ['coverage'],
+        'test': ['coverage', 'nose', 'mock'],
     },
 
     # If there are data files included in your packages that need to be
@@ -107,4 +107,6 @@ setup(
             'sample=sample:main',
         ],
     },
+
+    test_suite="sample.tests",
 )
